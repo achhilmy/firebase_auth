@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "246403336707",
+    "project_id": "fir-sanbercampus",
+    "storage_bucket": "fir-sanbercampus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246403336707:android:f6987739d448b74b65dc36",
+        "android_client_info": {
+          "package_name": "com.example.firebase_authentication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzW_1gAOTNJw1s4rmK_ZhtdcbjWhW7HWY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
