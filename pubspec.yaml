@@ -32,6 +32,7 @@ dependencies:
   equatable: ^2.0.5
   firebase_auth: ^4.16.0
   firebase_core: ^2.24.2
+  cloud_firestore: ^4.14.0 #tambahkan ini
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.4

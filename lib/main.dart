@@ -1,4 +1,5 @@
-import 'package:firebase_authentication/auth_bloc/auth_bloc.dart';
+import 'package:firebase_authentication/logic/auth_bloc/auth_bloc.dart';
+import 'package:firebase_authentication/logic/user_bloc/user_bloc.dart';
 import 'package:firebase_authentication/routes/router.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -28,6 +29,9 @@ class MyApp extends StatelessWidget {
       providers: [
         BlocProvider(
           create: (context) => AuthBloc(),
+        ),
+        BlocProvider(
+          create: (context) => UserBloc(),
         )
       ],
       child: MaterialApp.router(
