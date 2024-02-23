@@ -1,5 +1,6 @@
 import 'package:firebase_authentication/pages/materi_auth.dart';
 import 'package:firebase_authentication/pages/materi_firestore.dart';
+import 'package:firebase_authentication/pages/materi_storage.dart';
 import 'package:go_router/go_router.dart';
 
 class AppRouter {
@@ -24,7 +25,7 @@ class AppRouter {
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => const MateriCloudFirestore(),
+        builder: (context, state) => const MateriFirebaseStorage(),
       ),
 
       /// Main Page

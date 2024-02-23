@@ -1,4 +1,5 @@
 import 'package:firebase_authentication/logic/auth_bloc/auth_bloc.dart';
+import 'package:firebase_authentication/logic/images_cubit/images_cubit.dart';
 import 'package:firebase_authentication/logic/user_bloc/user_bloc.dart';
 import 'package:firebase_authentication/routes/router.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -11,10 +12,12 @@ void main() async {
   /// Inisialisasi Project Firebase
   await Firebase.initializeApp(
       options: const FirebaseOptions(
-          apiKey: "AIzaSyAzW_1gAOTNJw1s4rmK_ZhtdcbjWhW7HWY",
-          appId: "1:246403336707:android:f6987739d448b74b65dc36",
-          messagingSenderId: "1:246403336707",
-          projectId: "fir-sanbercampus"));
+    apiKey: "AIzaSyAzW_1gAOTNJw1s4rmK_ZhtdcbjWhW7HWY",
+    appId: "1:246403336707:android:f6987739d448b74b65dc36",
+    messagingSenderId: "1:246403336707",
+    projectId: "fir-sanbercampus",
+    storageBucket: "fir-sanbercampus.appspot.com",
+  ));
 
   runApp(const MyApp());
 }
@@ -32,6 +35,9 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider(
           create: (context) => UserBloc(),
+        ),
+        BlocProvider(
+          create: (context) => ImagesCubit(),
         )
       ],
       child: MaterialApp.router(
