@@ -1,3 +1,4 @@
+import 'package:firebase_authentication/pages/code_generation_page.dart';
 import 'package:firebase_authentication/pages/materi_auth.dart';
 import 'package:firebase_authentication/pages/materi_cloud_messaging.dart';
 import 'package:firebase_authentication/pages/materi_firestore.dart';
@@ -26,7 +27,7 @@ class AppRouter {
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => const MateriCloudMessaging(),
+        builder: (context, state) => const CodeGeneration(),
       ),
 
       /// Main Page
